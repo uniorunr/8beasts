@@ -4,5 +4,9 @@ body {
 
 canvas  {
   background-color: antiquewhite;
-  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
 }
