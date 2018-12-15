@@ -98,3 +98,13 @@ document.querySelector('.control.attack').addEventListener('click', hero.attack.
 document.querySelector('.control.heal').addEventListener('click', hero.heal.bind(hero));
 document.querySelector('.control.walk').addEventListener('click', hero.walk.bind(hero));
 document.querySelector('.control.death').addEventListener('click', hero.death.bind(hero));
+
+const monster = new Character('Piggo', 100, 1920, 960,
+  5, 10, 0, 10, '../img/minotaur_sprite.png', 0, 0, 6, 'idle', 0.75, 2 / 3);
+
+setInterval(monster.draw.bind(monster), 1000 / monster.fps);
+
+document.querySelector('.control.attackM').addEventListener('click', monster.attack.bind(monster));
+document.querySelector('.control.healM').addEventListener('click', monster.heal.bind(monster));
+document.querySelector('.control.walkM').addEventListener('click', monster.walk.bind(monster));
+document.querySelector('.control.deathM').addEventListener('click', monster.death.bind(monster));
