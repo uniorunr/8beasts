@@ -1,20 +1,23 @@
 {
   "name": "game",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Demo Game (RSS project)",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
-    "start": "lite-server"
+    "start": "lite-server",
+    "watch": "webpack --watch",
+    "debug-test": "node --inspect-brk node_modules"
   },
   "keywords": [],
-  "author": "https://github.com/uniorunr",
+  "author": "uniorunr",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.9.0",
@@ -28,5 +31,17 @@
   },
   "dependencies": {
     "lodash": "^4.17.11"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|html)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
   }
 }
