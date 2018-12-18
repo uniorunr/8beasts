@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Emulogic";
+  src: url("../fonts/emulogic.ttf");
+}
+@font-face {
+  font-family: "Pixelettes";
+  src: url("../fonts/SlimThinPixelettes.otf");
+}
+
+body {
+  background-color: #72707d;
+}
+
+canvas  {
+  background-color: antiquewhite;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
