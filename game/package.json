@@ -30,6 +30,7 @@
     "fontface-loader": "0.0.8",
     "image-webpack-loader": "^4.6.0",
     "jest": "^23.6.0",
+    "jsdom": "^13.1.0",
     "lite-server": "^2.4.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",

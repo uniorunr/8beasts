@@ -1,10 +1,4 @@
-class Canvas {
-  static draw() {
-    const cs = document.createElement('canvas');
-    cs.setAttribute('id', 'canvas');
-    document.querySelector('.content').appendChild(cs);
-  }
-}
+import Canvas from './canvas';
 
 Canvas.draw();
 
@@ -13,4 +7,4 @@ canvas.width = ((window.innerWidth / 10).toFixed(0) - 3) * 10;
 canvas.height = ((window.innerHeight / 10).toFixed(0) - 3) * 10;
 const ctx = canvas.getContext('2d');
 
-export { Canvas, canvas, ctx };
+export { canvas, ctx };
