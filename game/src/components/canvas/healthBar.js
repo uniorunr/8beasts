@@ -1,8 +1,7 @@
-import { canvas, ctx, Canvas } from './initialization';
+import { ctx } from './initialization';
 
-class Health extends Canvas {
+class Health {
   constructor(health, name, clearArea, rectangleArea, textArea) {
-    super(canvas, ctx);
     this.health = health;
     this.name = name;
     this.clearArea = clearArea;
@@ -11,22 +10,22 @@ class Health extends Canvas {
   }
 
   updateFrame() {
-    this.ctx.clearRect(...this.clearArea);
+    ctx.clearRect(...this.clearArea);
   }
 
   draw() {
     this.updateFrame();
-    this.ctx.beginPath();
-    this.ctx.strokeStyle = '#72707d';
-    this.ctx.rect(...this.rectangleArea);
-    this.ctx.fillRect(...this.rectangleArea);
-    this.ctx.lineWidth = 4;
-    this.ctx.stroke();
-    this.ctx.closePath();
+    ctx.beginPath();
+    ctx.strokeStyle = '#72707d';
+    ctx.rect(...this.rectangleArea);
+    ctx.fillRect(...this.rectangleArea);
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    ctx.closePath();
 
-    this.ctx.font = '0.8em Emulogic, Pixelettes, sans-serif';
-    this.ctx.fillStyle = '#72707d';
-    this.ctx.fillText(this.name, ...this.textArea);
+    ctx.font = '0.8em Emulogic, Pixelettes, sans-serif';
+    ctx.fillStyle = '#72707d';
+    ctx.fillText(this.name, ...this.textArea);
   }
 }
 

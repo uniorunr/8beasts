@@ -1,8 +1,7 @@
-import { Canvas, canvas, ctx } from './initialization';
+import { ctx } from './initialization';
 
-class Tips extends Canvas {
+class Tips {
   constructor(generic, winTips, loseTips, clearArea, textArea) {
-    super(canvas, ctx);
     this.generic = generic;
     this.winTips = winTips;
     this.loseTips = loseTips;
@@ -12,14 +11,14 @@ class Tips extends Canvas {
   }
 
   updateFrame() {
-    this.ctx.clearRect(...this.clearArea);
+    ctx.clearRect(...this.clearArea);
   }
 
   draw() {
     this.updateFrame();
-    this.ctx.font = '0.8em Emulogic, Pixelettes, sans-serif';
-    this.ctx.fillStyle = '#72707d';
-    this.ctx.fillText(this.currTip, ...this.textArea);
+    ctx.font = '0.8em Emulogic, Pixelettes, sans-serif';
+    ctx.fillStyle = '#72707d';
+    ctx.fillText(this.currTip, ...this.textArea);
   }
 }
 

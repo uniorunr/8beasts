@@ -1,8 +1,7 @@
-import { Canvas, canvas, ctx } from './initialization';
+import { canvas, ctx } from './initialization';
 
-class Sprite extends Canvas {
+class Sprite {
   constructor(name, hp, sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc) {
-    super(canvas, ctx);
     this.name = name;
     this.hp = hp;
     this.spriteWidth = sWidth;
@@ -37,7 +36,7 @@ class Character extends Sprite {
   }
 
   updateFrame() {
-    this.ctx.clearRect(canvas.width * this.position - this.frameWidth() / 2,
+    ctx.clearRect(canvas.width * this.position - this.frameWidth() / 2,
       canvas.height / 2 - this.frameHeight() * this.dPos, this.frameWidth(), this.frameHeight());
     this.curFrame = (this.curFrame += 1) % this.frames;
     this.srcX = this.curFrame * this.frameWidth();
@@ -45,7 +44,7 @@ class Character extends Sprite {
 
   draw() {
     this.updateFrame();
-    this.ctx.drawImage(this.sprite, this.srcX, this.srcY, this.frameWidth(), this.frameHeight(),
+    ctx.drawImage(this.sprite, this.srcX, this.srcY, this.frameWidth(), this.frameHeight(),
       canvas.width * this.position - this.frameWidth() / 2,
       canvas.height / 2 - this.frameHeight() * this.dPos,
       this.frameWidth(), this.frameHeight());
