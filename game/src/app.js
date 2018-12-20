@@ -1,4 +1,7 @@
 import { canvas } from './components/canvas/initialization';
+import Wizard from './img/wizard_sprite.png';
+import Minotaur from './img/minotaur_sprite.png';
+import './styles/style.css';
 import Character from './components/canvas/character';
 import Health from './components/canvas/healthBar';
 import Tips from './components/canvas/tips';
@@ -6,12 +9,12 @@ import Score from './components/canvas/score';
 import { genericTips, winTips, loseTips } from './components/config';
 
 const hero = new Character('Yury', 100, 1280, 1280,
-  10, 10, 0, 10, '../img/wizard_sprite.png', 0, 0, 6, 'idle', 0.25, 0.5);
+  10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.25, 0.5);
 
 const heroHealth = new Health(100, hero.name, [0, 0, 300, 70], [40, 60, 300, 10], [40, 45]);
 
 const monster = new Character('Angry Ogre Tommy', 100, 1920, 960,
-  5, 10, 0, 10, '../img/minotaur_sprite.png', 0, 0, 6, 'idle', 0.75, 2 / 3);
+  5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.75, 2 / 3);
 
 const monsterHealth = new Health(100, monster.name,
   [canvas.width - 340, 0, canvas.width, 70],
