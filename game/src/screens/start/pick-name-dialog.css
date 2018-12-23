@@ -1,0 +1,36 @@
+.choose-player-name {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+}
+
+.choose-player-name h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.choose-player-name label {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+}
+
+.choose-player-name .js-player-name {
+  border: none;
+  padding: 1%;
+  outline: none;
+}
+
+.choose-player-name .button {
+  padding: 1%;
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+}

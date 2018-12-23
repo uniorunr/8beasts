@@ -8,15 +8,20 @@
   src: url("../fonts/SlimThinPixelettes.otf");
 }
 
+@import url("../screens/start/pick-name-dialog.css");
+
 body {
   background-color: #72707d;
+  font: 700 Emulogic 14px;
 }
 
 canvas  {
   background-color: antiquewhite;
 }
 
-.content {
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
