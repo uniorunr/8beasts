@@ -1,12 +1,12 @@
 import { JSDOM } from 'jsdom';
-import Canvas from './canvas';
+import { Canvas } from './canvasinit';
 
 const dom = new JSDOM();
 global.document = dom.window.document;
 global.window = dom.window;
 
 const content = document.createElement('div');
-content.className = 'content';
+content.className = 'battle-content';
 document.querySelector('body').appendChild(content);
 
 describe('tests for canvas creation process', () => {
