@@ -19,13 +19,13 @@
   color: #72707d;
 }
 
-.choose-player-name .js-player-name {
+.choose-player-name .player-name {
   border: none;
   padding: 1%;
   outline: none;
 }
 
-.choose-player-name .button {
+.choose-player-name .submit-button {
   padding: 1%;
   background: #72707d;
   border: none;
@@ -33,4 +33,27 @@
   font-family: Emulogic;
   font-size: 12px;
   color: antiquewhite;
+}
+
+.choose-player-name .submit-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.choose-player-name .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1%;
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+}
+
+.choose-player-name .close:active {
+  background: antiquewhite;
+  color: #72707d;
 }

@@ -8,11 +8,16 @@
   src: url("../fonts/SlimThinPixelettes.otf");
 }
 
-@import url("../screens/start/pick-name-dialog.css");
+@import url("../screens/choose-name/choose-name.css");
+@import url("../screens/home/home.css");
 
 body {
   background-color: #72707d;
-  font: 700 Emulogic 14px;
+  font: 0.95em Emulogic, Pixelettes, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 canvas  {
