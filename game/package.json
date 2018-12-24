@@ -20,6 +20,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.0.1",
     "eslint": "^5.9.0",
@@ -41,7 +42,12 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "@babel/polyfill": "^7.2.5",
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.5",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.11",
+    "regenerator-runtime": "^0.13.1"
   },
   "jest": {
     "transform": {
