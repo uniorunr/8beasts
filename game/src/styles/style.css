@@ -10,6 +10,7 @@
 
 @import url("../screens/choose-name/choose-name.css");
 @import url("../screens/home/home.css");
+@import url("../components/modal-dialog/magic-spell.css");
 
 body {
   background-color: #72707d;

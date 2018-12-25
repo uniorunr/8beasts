@@ -1,0 +1,46 @@
+.magic-spell-dialog {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+}
+
+.magic-spell-dialog h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.spell-button {
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+  margin: 5% 0;
+}
+
+.magic-spell-dialog .spell-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.magic-spells {
+  display: flex;
+  justify-content: space-around;
+}
+
+.spells {
+  display: flex;
+  flex-direction: column;
+}
+
+.spell-type {
+  font-family: Emulogic;
+  font-size: 10px;
+  color: #72707d;
+  text-align: center;
+}
