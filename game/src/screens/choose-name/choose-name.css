@@ -57,3 +57,8 @@
   background: antiquewhite;
   color: #72707d;
 }
+
+.only-english {
+  color: #72707d;
+  font-size: 9px;
+}
