@@ -3,10 +3,10 @@ import Minotaur from '../../img/minotaur_sprite.png';
 import {
   Canvas, Character, Health, Score, Tips,
 } from '../../components/canvas/canvasinit';
-import { genericTips, winTips, loseTips } from '../../components/config';
+import { genericTips, winTips, loseTips } from '../../config';
 import LandingPage from '../home/home';
 
-const loadCanvas = (heroName) => {
+const loadCanvas = (heroName, monsterName) => {
   LandingPage.empty();
   Canvas.draw();
 
@@ -19,7 +19,7 @@ const loadCanvas = (heroName) => {
 
   const heroHealth = new Health(100, hero.name, [0, 0, 300, 70], [40, 60, 300, 10], [40, 45]);
 
-  const monster = new Character('Angry Ogre Tommy', 100, 1920, 960,
+  const monster = new Character(monsterName, 100, 1920, 960,
     5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.75, 2 / 3);
 
   const monsterHealth = new Health(100, monster.name,
