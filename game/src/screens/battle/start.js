@@ -6,6 +6,8 @@ import {
 import { genericTips, winTips, loseTips } from '../../config';
 import LandingPage from '../home/home';
 
+const battleState = {};
+
 const loadCanvas = (heroName, monsterName) => {
   LandingPage.empty();
   Canvas.draw();
@@ -16,16 +18,18 @@ const loadCanvas = (heroName, monsterName) => {
 
   const hero = new Character(heroName, 100, 1280, 1280,
     10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.25, 0.5);
-
-  const heroHealth = new Health(100, hero.name, [0, 0, 300, 70], [40, 60, 300, 10], [40, 45]);
+  const heroHealth = new Health(100, heroName, [0, 0, 300, 70], [40, 60, 300, 10], [40, 45]);
+  battleState.hero = hero;
+  battleState.heroHealth = heroHealth;
 
   const monster = new Character(monsterName, 100, 1920, 960,
     5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.75, 2 / 3);
-
-  const monsterHealth = new Health(100, monster.name,
+  const monsterHealth = new Health(100, monsterName,
     [canvas.width - 340, 0, canvas.width, 70],
     [canvas.width - 340, 60, 300, 10],
     [canvas.width - 340, 45]);
+  battleState.monster = monster;
+  battleState.monsterHealth = monsterHealth;
 
   const tips = new Tips(
     genericTips,
@@ -34,8 +38,10 @@ const loadCanvas = (heroName, monsterName) => {
     [40, canvas.height - 80, canvas.width, 60],
     [40, canvas.height - 40],
   );
+  battleState.tips = tips;
 
   const score = new Score(0, [canvas.width / 2 - 70, 30, 110, 30], [canvas.width / 2 - 70, 45]);
+  battleState.score = score;
 
   setInterval(monster.draw.bind(monster), 1000 / monster.fps);
   setInterval(hero.draw.bind(hero), 1000 / hero.fps);
@@ -45,4 +51,4 @@ const loadCanvas = (heroName, monsterName) => {
   setInterval(score.draw.bind(score), 1000 / 50);
 };
 
-export default loadCanvas;
+export { loadCanvas, battleState };
