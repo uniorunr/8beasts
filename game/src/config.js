@@ -21,6 +21,7 @@ const monsterAdjective = [
   'angry',
   'terrible',
   'furious',
+  'silent',
 ];
 
 const monsterType = [
@@ -38,7 +39,15 @@ const monsterName = [
   'Aaron',
   'Jason',
   'Tony',
+  'Bob',
 ];
 
+const simpleMathOperators = [
+  '+',
+  '-',
+  '*',
+];
+
+export { simpleMathOperators };
 export { genericTips, winTips, loseTips };
 export { monsterAdjective, monsterType, monsterName };

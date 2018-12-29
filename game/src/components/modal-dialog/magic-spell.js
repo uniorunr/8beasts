@@ -1,4 +1,5 @@
 import template from './magic-spell.template';
+import SimpleMath from '../tasks/simpleMath/simpleMath';
 
 class MagicSpell {
   static draw() {
