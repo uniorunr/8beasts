@@ -17,8 +17,8 @@ const startApp = () => {
     e.preventDefault();
     const playerName = await ChoosePlayerName.getNewPlayerName();
     loadCanvas(playerName, combinedMonsterName(monsterAdjective, monsterType, monsterName));
-    await pause(3000);
-    MagicSpell.draw();
+    await pause(2000);
+    await MagicSpell.getSpell();
   });
 };
 
