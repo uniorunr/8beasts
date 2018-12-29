@@ -7,9 +7,9 @@ class Canvas {
 }
 
 class Sprite {
-  constructor(name, hp, sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc) {
+  constructor(name, health, sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc) {
     this.name = name;
-    this.hp = hp;
+    this.health = health;
     this.spriteWidth = sWidth;
     this.spriteHeight = sHeight;
     this.spriteRows = rows;
@@ -30,9 +30,9 @@ class Sprite {
 }
 
 class Character extends Sprite {
-  constructor(name, hp, sWidth, sHeight, rows, cols,
+  constructor(name, health, sWidth, sHeight, rows, cols,
     curFrame, frames, spriteSrc, srcX, srcY, fps, curAction, position, dPos) {
-    super(name, hp, sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc);
+    super(name, health, sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc);
     this.srcX = srcX;
     this.srcY = srcY;
     this.fps = fps;
@@ -88,11 +88,12 @@ class Character extends Sprite {
 }
 
 class Health {
-  constructor(health, name, clearArea, rectangleArea, textArea) {
-    this.health = health;
+  constructor(name, health, clearArea, rectangleArea, textArea) {
     this.name = name;
+    this.health = health;
     this.clearArea = clearArea;
     this.rectangleArea = rectangleArea;
+    this.healthArea = rectangleArea.slice();
     this.textArea = textArea;
     this.canvas = document.getElementById('canvas');
     this.ctx = this.canvas.getContext('2d');
@@ -107,7 +108,7 @@ class Health {
     this.ctx.beginPath();
     this.ctx.strokeStyle = '#72707d';
     this.ctx.rect(...this.rectangleArea);
-    this.ctx.fillRect(...this.rectangleArea);
+    this.ctx.fillRect(...this.healthArea);
     this.ctx.lineWidth = 4;
     this.ctx.stroke();
     this.ctx.closePath();

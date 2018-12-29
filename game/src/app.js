@@ -3,7 +3,7 @@ import './styles/style.css';
 import ChoosePlayerName from './screens/choose-name/chooseName';
 import LandingPage from './screens/home/home';
 import { GameState, setGameState } from './game';
-import { loadCanvas, battleState } from './screens/battle/start';
+import { loadCanvas } from './screens/battle/start';
 import MagicSpell from './components/modal-dialog/magic-spell';
 import { pause, combinedMonsterName } from './utils';
 import { monsterAdjective, monsterType, monsterName } from './config';
