@@ -85,6 +85,18 @@ class Character extends Sprite {
     this.srcY = 4 * this.frameHeight();
     this.curAction = 'death';
   }
+
+  damage() {
+    if (this.health !== 0) {
+      this.health -= 20;
+    }
+  }
+
+  recovery() {
+    if (this.health !== 100) {
+      this.health += 10;
+    }
+  }
 }
 
 class Health {
@@ -116,6 +128,20 @@ class Health {
     this.ctx.font = '0.8em Emulogic, Pixelettes, sans-serif';
     this.ctx.fillStyle = '#72707d';
     this.ctx.fillText(this.name, ...this.textArea);
+  }
+
+  damage() {
+    if (this.health !== 0) {
+      this.health -= 20;
+      this.healthArea[2] = this.rectangleArea[2] * this.health / 100;
+    }
+  }
+
+  recovery() {
+    if (this.health !== 100) {
+      this.health += 10;
+      this.healthArea[2] = this.rectangleArea[2] * this.health / 100;
+    }
   }
 }
 
