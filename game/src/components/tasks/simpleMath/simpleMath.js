@@ -82,4 +82,4 @@ class SimpleMath {
   }
 }
 
-export default SimpleMath;
+export { SimpleMath, calculation };
