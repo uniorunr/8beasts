@@ -1,5 +1,5 @@
 import template from './magic-spell.template';
-import { SimpleMath } from '../tasks/simpleMath/simpleMath';
+import chooseTask from '../tasks/chooseTask';
 
 class MagicSpell {
   static draw() {
@@ -21,7 +21,7 @@ class MagicSpell {
           const spell = button.value;
           resolve(spell);
           await MagicSpell.empty();
-          const answer = await SimpleMath.getAnswer();
+          const answer = await chooseTask(spell);
           console.log(answer);
           await MagicSpell.getSpell();
         });
