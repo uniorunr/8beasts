@@ -1,4 +1,5 @@
 import { SimpleMath } from './simpleMath/simpleMath';
+import Translation from './translation/translation';
 
 const chooseTask = async (spell) => {
   switch (spell.toLowerCase()) {
@@ -6,7 +7,7 @@ const chooseTask = async (spell) => {
       await SimpleMath.getAnswer();
       break;
     case 'magic translation':
-      await SimpleMath.getAnswer();
+      await Translation.getAnswer();
       break;
     default:
       throw new TypeError('Something went wrong, sorry kid!');

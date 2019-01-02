@@ -1,0 +1,58 @@
+.tasks-dialog {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+}
+
+.tasks-dialog h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  font-weight: normal;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.word-to-translate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5% auto;
+  color: #72707d;
+  font-weight: bold;
+}
+
+.tasks-dialog .tasks-dialog-answer {
+  border: solid white;
+  padding: 1%;
+  outline: none;
+  display: inline-block;
+  width: auto;
+  transition: 0.2s;
+}
+
+.tasks-dialog .submit-button {
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+  width: auto;
+}
+
+.tasks-dialog .submit-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.task-translation-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tasks-dialog-answer.wrong-input {
+  border: solid #ff8e8e;
+}
