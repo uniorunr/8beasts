@@ -12,6 +12,7 @@
 @import url("../screens/home/home.css");
 @import url("../components/modal-dialog/magic-spell.css");
 @import url("../components/tasks/simpleMath/simpleMath.css");
+@import url("../components/tasks/translation/translation.css");
 
 body {
   background-color: #72707d;
