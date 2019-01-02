@@ -1,10 +1,9 @@
 import 'babel-polyfill';
 import template from './translation.template';
-import { pause } from '../../../utils';
-import { battleState } from '../../../screens/battle/start';
+import { Task } from '../../../screens/battle/start';
 import dictionary from './dictionary.json';
 
-class Translation {
+class Translation extends Task {
   static draw() {
     const element = document.querySelector('.container');
     element.insertAdjacentHTML('afterbegin', template);
@@ -35,19 +34,7 @@ class Translation {
         const answer = input.value.toLowerCase();
         if (rightAnswerArr.includes(answer)) {
           Translation.empty();
-          await pause(1000);
-          battleState.hero.attack();
-          await pause(1500);
-          battleState.monsterHealth.damage();
-          battleState.monster.damage();
-          if (battleState.monster.health !== 0) {
-            battleState.monster.heal();
-          } else {
-            battleState.monster.death();
-          }
-          battleState.tips.currTip = battleState
-            .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
-          await pause(2000);
+          await Translation.win();
           resolve(answer);
         }
       });

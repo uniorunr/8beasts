@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import Wizard from '../../img/wizard_sprite.png';
 import Minotaur from '../../img/minotaur_sprite.png';
 import {
@@ -5,8 +6,27 @@ import {
 } from '../../components/canvas/canvasinit';
 import { genericTips, winTips, loseTips } from '../../config';
 import LandingPage from '../home/home';
+import { pause } from '../../utils';
 
 const battleState = {};
+
+class Task {
+  static async win() {
+    await pause(1000);
+    battleState.hero.attack();
+    await pause(1500);
+    battleState.monsterHealth.damage();
+    battleState.monster.damage();
+    if (battleState.monster.health !== 0) {
+      battleState.monster.heal();
+    } else {
+      battleState.monster.death();
+    }
+    battleState.tips.currTip = battleState
+      .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
+    await pause(2000);
+  }
+}
 
 const loadCanvas = (heroName, monsterName) => {
   LandingPage.empty();
@@ -52,4 +72,4 @@ const loadCanvas = (heroName, monsterName) => {
   setInterval(score.draw.bind(score), 1000 / 50);
 };
 
-export { loadCanvas, battleState };
+export { loadCanvas, battleState, Task };

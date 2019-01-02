@@ -1,6 +1,5 @@
 import template from './simpleMath.template';
-import { pause } from '../../../utils';
-import { battleState } from '../../../screens/battle/start';
+import { Task } from '../../../screens/battle/start';
 import { simpleMathOperators } from '../../../config';
 
 const args = () => {
@@ -28,7 +27,7 @@ const calculation = (operand1, operand2, operator) => {
   return result;
 };
 
-class SimpleMath {
+class SimpleMath extends Task {
   static draw() {
     const element = document.querySelector('.container');
     element.insertAdjacentHTML('afterbegin', template);
@@ -56,13 +55,7 @@ class SimpleMath {
         const answer = +input.value;
         if (+answer === rightAnswer) {
           SimpleMath.empty();
-          await pause(1000);
-          battleState.hero.attack();
-          await pause(1500);
-          battleState.monsterHealth.damage();
-          battleState.monster.damage();
-          battleState.monster.heal();
-          await pause(2000);
+          await SimpleMath.win();
           resolve(answer);
         }
       });
