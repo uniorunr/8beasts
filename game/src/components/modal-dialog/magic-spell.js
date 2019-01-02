@@ -1,5 +1,6 @@
 import template from './magic-spell.template';
 import chooseTask from '../tasks/chooseTask';
+import { battleState } from '../../screens/battle/start';
 
 class MagicSpell {
   static draw() {
@@ -21,9 +22,10 @@ class MagicSpell {
           const spell = button.value;
           resolve(spell);
           await MagicSpell.empty();
-          const answer = await chooseTask(spell);
-          console.log(answer);
-          await MagicSpell.getSpell();
+          await chooseTask(spell);
+          if (battleState.monster.health) {
+            await MagicSpell.getSpell();
+          }
         });
       });
     });

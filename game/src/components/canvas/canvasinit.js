@@ -47,7 +47,11 @@ class Character extends Sprite {
     this.ctx.clearRect(this.canvas.width * this.position - this.frameWidth() / 2,
       this.canvas.height / 2 - this.frameHeight() * this.dPos,
       this.frameWidth(), this.frameHeight());
-    this.curFrame = (this.curFrame += 1) % this.frames;
+    if (this.curAction === 'death' && this.curFrame === this.frames - 1) {
+      this.curFrame = this.frames - 1;
+    } else {
+      this.curFrame = (this.curFrame += 1) % this.frames;
+    }
     this.srcX = this.curFrame * this.frameWidth();
   }
 
@@ -57,7 +61,9 @@ class Character extends Sprite {
       this.canvas.width * this.position - this.frameWidth() / 2,
       this.canvas.height / 2 - this.frameHeight() * this.dPos,
       this.frameWidth(), this.frameHeight());
-    if (this.curFrame === this.frames - 1 && this.curAction !== 'idle') {
+    if (this.curFrame === this.frames - 1
+      && this.curAction !== 'idle'
+      && this.curAction !== 'death') {
       this.srcY = 0;
     }
   }
