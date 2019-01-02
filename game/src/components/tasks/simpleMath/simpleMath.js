@@ -57,6 +57,10 @@ class SimpleMath extends Task {
           SimpleMath.empty();
           await SimpleMath.win();
           resolve(answer);
+        } else {
+          SimpleMath.empty();
+          await SimpleMath.lose();
+          resolve(answer);
         }
       });
       submitButton.addEventListener('mousedown', async () => {

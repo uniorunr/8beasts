@@ -36,6 +36,10 @@ class Translation extends Task {
           Translation.empty();
           await Translation.win();
           resolve(answer);
+        } else {
+          Translation.empty();
+          await Translation.lose();
+          resolve(answer);
         }
       });
       submitButton.addEventListener('mousedown', async () => {

@@ -26,6 +26,20 @@ class Task {
       .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
     await pause(2000);
   }
+
+  static async lose() {
+    await pause(1000);
+    battleState.monster.attack();
+    await pause(1500);
+    battleState.heroHealth.damage();
+    battleState.hero.damage();
+    if (battleState.hero.health === 0) {
+      battleState.hero.death();
+    }
+    battleState.tips.currTip = battleState
+      .tips.loseTips[Math.floor(Math.random() * battleState.tips.loseTips.length)];
+    await pause(2000);
+  }
 }
 
 const loadCanvas = (heroName, monsterName) => {
@@ -39,7 +53,7 @@ const loadCanvas = (heroName, monsterName) => {
   const hero = new Character(heroName, 100, 1280, 1280,
     10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.25, 0.5);
   const heroHealth = new Health(heroName, hero.health,
-    [0, 0, 300, 70], [40, 60, 300, 10], [40, 45]);
+    [0, 0, 340, 70], [40, 60, 300, 10], [40, 45]);
   battleState.hero = hero;
   battleState.heroHealth = heroHealth;
 
