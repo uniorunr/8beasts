@@ -1,0 +1,491 @@
+{
+  "englishWords": [
+    {
+      "word": "cat",
+      "translation": [
+        "кот",
+        "кошка",
+        "котик"
+      ]
+    },
+    {
+      "word": "dog",
+      "translation": [
+        "собака",
+        "пес",
+        "собачка"
+      ]
+    },
+    {
+      "word": "bird",
+      "translation": [
+        "птица",
+        "птичка"
+      ]
+    },
+    {
+      "word": "apple",
+      "translation": [
+        "яблоко",
+        "яблочко"
+      ]
+    },
+    {
+      "word": "pear",
+      "translation": [
+        "груша",
+        "грушка"
+      ]
+    },
+    {
+      "word": "orange",
+      "translation": [
+        "апельсин",
+        "апельсинчик"
+      ]
+    },
+    {
+      "word": "banana",
+      "translation": [
+        "банан",
+        "бананчик"
+      ]
+    },
+    {
+      "word": "lemon",
+      "translation": [
+        "лимон",
+        "лимончик"
+      ]
+    },
+    {
+      "word": "pineapple",
+      "translation": [
+        "ананас"
+      ]
+    },
+    {
+      "word": "grapes",
+      "translation": [
+        "виноград",
+        "виноградины",
+        "виноградинки"
+      ]
+    },
+    {
+      "word": "kiwi",
+      "translation": [
+        "киви"
+      ]
+    },
+    {
+      "word": "carrot",
+      "translation": [
+        "морковь",
+        "морковка"
+      ]
+    },
+    {
+      "word": "Onion",
+      "translation": [
+        "лук",
+        "луковица"
+      ]
+    },
+    {
+      "word": "Garlic",
+      "translation": [
+        "чеснок"
+      ]
+    },
+    {
+      "word": "Tomato",
+      "translation": [
+        "помидор",
+        "томат"
+      ]
+    },
+    {
+      "word": "pepper",
+      "translation": [
+        "перец",
+        "перчик"
+      ]
+    },
+    {
+      "word": "Potato",
+      "translation": [
+        "картошка",
+        "картофель"
+      ]
+    },
+    {
+      "word": "Cucumber",
+      "translation": [
+        "огурец",
+        "огурчик"
+      ]
+    },
+    {
+      "word": "Snake",
+      "translation": [
+        "змея",
+        "змейка"
+      ]
+    },
+    {
+      "word": "Kitten",
+      "translation": [
+        "котенок",
+        "котеночек"
+      ]
+    },
+    {
+      "word": "Puppy",
+      "translation": [
+        "щенок",
+        "щеночек"
+      ]
+    },
+    {
+      "word": "Rabbit",
+      "translation": [
+        "кролик"
+      ]
+    },
+    {
+      "word": "fish",
+      "translation": [
+        "рыба",
+        "рыбка"
+      ]
+    },
+    {
+      "word": "Goat",
+      "translation": [
+        "коза",
+        "козел",
+        "козлик"
+      ]
+    },
+    {
+      "word": "Pig",
+      "translation": [
+        "свинья",
+        "поросенок"
+      ]
+    },
+    {
+      "word": "Sheep",
+      "translation": [
+        "овца",
+        "овечка",
+        "баран"
+      ]
+    },
+    {
+      "word": "Horse",
+      "translation": [
+        "лошадь",
+        "конь",
+        "лошадка"
+      ]
+    },
+    {
+      "word": "Cow",
+      "translation": [
+        "коровка",
+        "корова"
+      ]
+    },
+    {
+      "word": "Goose",
+      "translation": [
+        "гусь",
+        "гусыня"
+      ]
+    },
+    {
+      "word": "Chicken",
+      "translation": [
+        "курица",
+        "цыпленок"
+      ]
+    },
+    {
+      "word": "Duck",
+      "translation": [
+        "утка",
+        "уточка"
+      ]
+    },
+    {
+      "word": "Fox",
+      "translation": [
+        "лиса",
+        "лисичка",
+        "лис"
+      ]
+    },
+    {
+      "word": "Wolf",
+      "translation": [
+        "волк",
+        "волчица"
+      ]
+    },
+    {
+      "word": "bear",
+      "translation": [
+        "медведь",
+        "медведица"
+      ]
+    },
+    {
+      "word": "Elephant",
+      "translation": [
+        "слон",
+        "слониха"
+      ]
+    },
+    {
+      "word": "Tiger",
+      "translation": [
+        "тигр",
+        "тигрица"
+      ]
+    },
+    {
+      "word": "Crocodile",
+      "translation": [
+        "крокодил",
+        "крокодилица"
+      ]
+    },
+    {
+      "word": "Giraffe",
+      "translation": [
+        "жираф",
+        "жирафчик"
+      ]
+    },
+    {
+      "word": "Car",
+      "translation": [
+        "машина",
+        "автомобиль"
+      ]
+    },
+    {
+      "word": "Taxi",
+      "translation": [
+        "такси"
+      ]
+    },
+    {
+      "word": "Bus",
+      "translation": [
+        "автобус"
+      ]
+    },
+    {
+      "word": "Train",
+      "translation": [
+        "поезд",
+        "состав"
+      ]
+    },
+    {
+      "word": "Plane",
+      "translation": [
+        "самолет",
+        "самолетик"
+      ]
+    },
+    {
+      "word": "bike",
+      "translation": [
+        "велосипед",
+        "мотоцикл"
+      ]
+    },
+    {
+      "word": "ship",
+      "translation": [
+        "корабль",
+        "судно"
+      ]
+    },
+    {
+      "word": "Doctor",
+      "translation": [
+        "доктор",
+        "врач",
+        "медик"
+      ]
+    },
+    {
+      "word": "Vet",
+      "translation": [
+        "ветеринар"
+      ]
+    },
+    {
+      "word": "Teacher",
+      "translation": [
+        "учитель",
+        "учительница"
+      ]
+    },
+    {
+      "word": "Policeman",
+      "translation": [
+        "полицейский",
+        "милиционер"
+      ]
+    },
+    {
+      "word": "Firefighter",
+      "translation": [
+        "пожарный",
+        "пожарник"
+      ]
+    },
+    {
+      "word": "Artist",
+      "translation": [
+        "художник",
+        "художница"
+      ]
+    },
+    {
+      "word": "Scientist",
+      "translation": [
+        "ученый"
+      ]
+    },
+    {
+      "word": "Hairdresser",
+      "translation": [
+        "парикмахер"
+      ]
+    },
+    {
+      "word": "Plumber",
+      "translation": [
+        "водопроводчик",
+        "сантехник"
+      ]
+    },
+    {
+      "word": "Chef",
+      "translation": [
+        "повар",
+        "шеф-повар"
+      ]
+    },
+    {
+      "word": "Bedroom",
+      "translation": [
+        "спальня",
+        "спальная комната"
+      ]
+    },
+    {
+      "word": "Kitchen",
+      "translation": [
+        "кухня",
+        "кухонька"
+      ]
+    },
+    {
+      "word": "Bathroom",
+      "translation": [
+        "ванная",
+        "ванна",
+        "ванная комната"
+      ]
+    },
+    {
+      "word": "Garage",
+      "translation": [
+        "гараж"
+      ]
+    },
+    {
+      "word": "Head",
+      "translation": [
+        "голова",
+        "головка"
+      ]
+    },
+    {
+      "word": "Hair",
+      "translation": [
+        "волосы"
+      ]
+    },
+    {
+      "word": "Eyes",
+      "translation": [
+        "глаза"
+      ]
+    },
+    {
+      "word": "Nose",
+      "translation": [
+        "нос",
+        "носик"
+      ]
+    },
+    {
+      "word": "Teeth",
+      "translation": [
+        "зубы",
+        "зубки"
+      ]
+    },
+    {
+      "word": "Lips",
+      "translation": [
+        "губы",
+        "губки"
+      ]
+    },
+    {
+      "word": "Ears",
+      "translation": [
+        "уши",
+        "ушки"
+      ]
+    },
+    {
+      "word": "Neck",
+      "translation": [
+        "шея",
+        "шеюшка"
+      ]
+    },
+    {
+      "word": "Shoulders",
+      "translation": [
+        "плечи",
+        "плечики"
+      ]
+    },
+    {
+      "word": "Leg",
+      "translation": [
+        "нога",
+        "ножка"
+      ]
+    },
+    {
+      "word": "Feet",
+      "translation": [
+        "стопы",
+        "ноги"
+      ]
+    }
+  ]
+}
