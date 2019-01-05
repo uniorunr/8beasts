@@ -51,14 +51,14 @@ const loadCanvas = (heroName, monsterName) => {
   canvas.height = ((window.innerHeight / 10).toFixed(0) - 3) * 10;
 
   const hero = new Character(heroName, 100, 1280, 1280,
-    10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.25, 0.5);
+    10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.2, 0.5);
   const heroHealth = new Health(heroName, hero.health,
     [0, 0, 340, 70], [40, 60, 300, 10], [40, 45]);
   battleState.hero = hero;
   battleState.heroHealth = heroHealth;
 
   const monster = new Character(monsterName, 100, 1920, 960,
-    5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.75, 2 / 3);
+    5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.8, 2 / 3);
   const monsterHealth = new Health(monsterName, monster.health,
     [canvas.width - 340, 0, canvas.width, 70],
     [canvas.width - 340, 60, 300, 10],
