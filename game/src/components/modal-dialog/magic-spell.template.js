@@ -6,7 +6,7 @@ export default `
     <div class="spells attack-spells">
       <p class="spell-type">Attack spell</p>
       <input type="button" class="spell-button attack0" value="simple math spell">
-      <input type="button" class="spell-button attack1" value="spell 2">
+      <input type="button" class="spell-button attack1" value="right order attack">
       <input type="button" class="spell-button attack2" value="spell 3">
     </div>
     <div class="spells heal-spells">

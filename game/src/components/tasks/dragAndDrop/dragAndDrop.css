@@ -1,0 +1,76 @@
+.tasks-dialog {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+}
+
+.tasks-dialog h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.tasks-dialog label {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  display: flex;
+}
+
+.tasks-dialog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-dialog .tasks-dialog-answer {
+  border: solid white;
+  padding: 1%;
+  outline: none;
+  display: inline-block;
+  width: auto;
+  transition: 0.2s;
+}
+
+.tasks-dialog .submit-button {
+  background: #72707d;
+  border: solid #72707d 4px;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+  width: auto;
+}
+
+.tasks-dialog .submit-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.tasks-dialog-answer.wrong-input {
+  border: solid #ff8e8e;
+}
+
+.task-drag-drop-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-drag-drop-wrapper .letterList {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 2% 0 5%;
+  width: 70%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.task-drag-drop-wrapper .letterListItem {
+  background: #72707d;
+  border: solid #72707d 4px;
+  color: antiquewhite;
+}
