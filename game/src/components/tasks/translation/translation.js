@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import template from './translation.template';
 import { Task } from '../../../screens/battle/start';
-import dictionary from './dictionary.json';
+import dictionary from '../dictionary.json';
 
 class Translation extends Task {
   static draw() {

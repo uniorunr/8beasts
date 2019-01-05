@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import template from './audition.template';
 import { Task } from '../../../screens/battle/start';
-import dictionary from './dictionary.json';
+import dictionary from '../dictionary.json';
 
 class Audition extends Task {
   static draw() {
