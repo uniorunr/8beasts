@@ -73,4 +73,6 @@
   background: #72707d;
   border: solid #72707d 4px;
   color: antiquewhite;
+  min-width: 5%;
+  padding: 1%;
 }
