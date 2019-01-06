@@ -1,0 +1,82 @@
+.tasks-dialog {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+}
+
+.tasks-dialog h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.tasks-dialog label {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  display: flex;
+}
+
+.tasks-dialog .tasks-dialog-answer {
+  border: solid white;
+  padding: 1%;
+  outline: none;
+  display: inline-block;
+  width: auto;
+  transition: 0.2s;
+}
+
+.tasks-dialog .submit-button {
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+  width: auto;
+}
+
+.tasks-dialog .submit-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.task-sequence-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-dialog-answer.wrong-input {
+  border: solid #ff8e8e;
+}
+
+.tasks-dialog .sequence-block {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-around;
+  list-style: none;
+  color: #72707d;
+  width: 80%;
+  margin: 2% 0 5%;
+}
+
+.tasks-dialog .sequence-item {
+  background: #72707d;
+  border: solid #72707d 4px;
+  color: antiquewhite;
+  padding: 1%;
+  min-width: 15%;
+  text-align: center;
+}
+
+.tasks-dialog .sequence-item.item4 {
+  background: antiquewhite;
+  border: solid #72707d 4px;
+  color: #72707d;
+}

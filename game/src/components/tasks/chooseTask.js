@@ -2,6 +2,7 @@ import { SimpleMath } from './simpleMath/simpleMath';
 import Translation from './translation/translation';
 import Audition from './audition/audition';
 import DragAndDrop from './dragAndDrop/dragAndDrop';
+import Sequence from './sequence/sequence';
 
 const chooseTask = async (spell) => {
   switch (spell.toLowerCase()) {
@@ -16,6 +17,9 @@ const chooseTask = async (spell) => {
       break;
     case 'right order attack':
       await DragAndDrop.getAnswer();
+      break;
+    case 'miraculous sequence':
+      await Sequence.getAnswer();
       break;
     default:
       throw new TypeError('Something went wrong, sorry kid!');

@@ -15,6 +15,7 @@
 @import url("../components/tasks/translation/translation.css");
 @import url("../components/tasks/audition/audition.css");
 @import url("../components/tasks/dragAndDrop/dragAndDrop.css");
+@import url("../components/tasks/sequence/sequence.css");
 
 body {
   background-color: #72707d;
