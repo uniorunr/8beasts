@@ -55,7 +55,7 @@ class SimpleMath extends Task {
         const answer = +input.value;
         if (+answer === rightAnswer) {
           SimpleMath.empty();
-          await SimpleMath.win();
+          await SimpleMath.win('attack');
           resolve(answer);
         } else {
           SimpleMath.empty();

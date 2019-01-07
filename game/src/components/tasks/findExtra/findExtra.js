@@ -51,7 +51,7 @@ class FindExtra extends Task {
           const answer = button.value;
           if (answer === rightAnswer) {
             FindExtra.empty();
-            await FindExtra.win();
+            await FindExtra.win('heal');
             resolve(answer);
           } else {
             FindExtra.empty();

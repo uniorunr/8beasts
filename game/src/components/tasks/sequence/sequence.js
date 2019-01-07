@@ -35,7 +35,7 @@ class Sequence extends Task {
         const answer = +input.value;
         if (+answer === rightAnswer) {
           Sequence.empty();
-          await Sequence.win();
+          await Sequence.win('heal');
           resolve(answer);
         } else {
           Sequence.empty();

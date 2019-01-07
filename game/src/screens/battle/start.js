@@ -11,20 +11,36 @@ import { pause } from '../../utils';
 const battleState = {};
 
 class Task {
-  static async win() {
-    await pause(1000);
-    battleState.hero.attack();
-    await pause(1500);
-    battleState.monsterHealth.damage();
-    battleState.monster.damage();
-    if (battleState.monster.health !== 0) {
-      battleState.monster.heal();
-    } else {
-      battleState.monster.death();
+  static async win(spell) {
+    switch (spell) {
+      case 'attack':
+        await pause(1000);
+        battleState.hero.attack();
+        await pause(1500);
+        battleState.monsterHealth.damage();
+        battleState.monster.damage();
+        if (battleState.monster.health !== 0) {
+          battleState.monster.heal();
+        } else {
+          battleState.monster.death();
+        }
+        battleState.tips.currTip = battleState
+          .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
+        await pause(2000);
+        break;
+      case 'heal':
+        await pause(1000);
+        battleState.hero.heal();
+        await pause(1500);
+        battleState.heroHealth.recovery();
+        battleState.hero.recovery();
+        battleState.tips.currTip = battleState
+          .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
+        await pause(2000);
+        break;
+      default:
+        throw new TypeError('Something went wrong, sorry kid!');
     }
-    battleState.tips.currTip = battleState
-      .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
-    await pause(2000);
   }
 
   static async lose() {

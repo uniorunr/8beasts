@@ -40,7 +40,7 @@ class Audition extends Task {
         const answer = input.value.toLowerCase();
         if (rightAnswer === answer) {
           Audition.empty();
-          await Audition.win();
+          await Audition.win('heal');
           resolve(answer);
         } else {
           Audition.empty();

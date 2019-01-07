@@ -57,7 +57,7 @@ class DragAndDrop extends Task {
         const result = resultArr.join('');
         if (result === rightAnswer) {
           DragAndDrop.empty();
-          await DragAndDrop.win();
+          await DragAndDrop.win('attack');
           resolve(result);
         } else {
           DragAndDrop.empty();

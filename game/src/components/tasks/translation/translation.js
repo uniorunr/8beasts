@@ -34,7 +34,7 @@ class Translation extends Task {
         const answer = input.value.toLowerCase();
         if (rightAnswerArr.includes(answer)) {
           Translation.empty();
-          await Translation.win();
+          await Translation.win('attack');
           resolve(answer);
         } else {
           Translation.empty();
