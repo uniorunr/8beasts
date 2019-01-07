@@ -45,6 +45,7 @@
     "@babel/polyfill": "^7.2.5",
     "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.5",
+    "firebase": "^5.7.2",
     "isomorphic-fetch": "^2.2.1",
     "regenerator-runtime": "^0.13.1",
     "sortablejs": "^1.8.0-rc1"

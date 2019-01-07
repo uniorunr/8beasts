@@ -5,8 +5,10 @@ import LandingPage from './screens/home/home';
 import MagicSpell from './components/modal-dialog/magic-spell';
 import { combinedMonsterName } from './utils';
 import { mnstrAdj, mnstrType, mnstrName } from './config';
+import FireBase from './db/firebase';
 
 const startApp = () => {
+  FireBase.init();
   LandingPage.draw();
 
   document.querySelector('.play-button .button').addEventListener('click', async (e) => {
