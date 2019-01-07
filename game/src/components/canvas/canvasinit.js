@@ -4,6 +4,10 @@ class Canvas {
     cnvs.setAttribute('id', 'canvas');
     document.querySelector('.battle-content').appendChild(cnvs);
   }
+
+  static empty() {
+    document.querySelector('#canvas').remove();
+  }
 }
 
 class Sprite {

@@ -42,48 +42,60 @@ class Task {
   }
 }
 
-const loadCanvas = (heroName, monsterName) => {
-  LandingPage.empty();
-  Canvas.draw();
+class LoadCanvas {
+  static load(heroName, monsterName) {
+    const initCanvas = document.querySelector('#canvas');
+    if (!initCanvas) LandingPage.empty();
+    if (initCanvas) Canvas.empty();
+    Canvas.draw();
 
-  const canvas = document.getElementById('canvas');
-  canvas.width = ((window.innerWidth / 10).toFixed(0) - 3) * 10;
-  canvas.height = ((window.innerHeight / 10).toFixed(0) - 3) * 10;
+    const canvas = document.getElementById('canvas');
+    canvas.width = ((window.innerWidth / 10).toFixed(0) - 3) * 10;
+    canvas.height = ((window.innerHeight / 10).toFixed(0) - 3) * 10;
 
-  const hero = new Character(heroName, 100, 1280, 1280,
-    10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.2, 0.5);
-  const heroHealth = new Health(heroName, hero.health,
-    [0, 0, 340, 70], [40, 60, 300, 10], [40, 45]);
-  battleState.hero = hero;
-  battleState.heroHealth = heroHealth;
+    const hero = new Character(heroName, 100, 1280, 1280,
+      10, 10, 0, 10, Wizard, 0, 0, 6, 'idle', 0.2, 0.5);
+    const heroHealth = new Health(heroName, hero.health,
+      [0, 0, 340, 70], [40, 60, 300, 10], [40, 45]);
+    battleState.hero = hero;
+    battleState.heroHealth = heroHealth;
 
-  const monster = new Character(monsterName, 100, 1920, 960,
-    5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.8, 2 / 3);
-  const monsterHealth = new Health(monsterName, monster.health,
-    [canvas.width - 340, 0, canvas.width, 70],
-    [canvas.width - 340, 60, 300, 10],
-    [canvas.width - 340, 45]);
-  battleState.monster = monster;
-  battleState.monsterHealth = monsterHealth;
+    const monster = new Character(monsterName, 100, 1920, 960,
+      5, 10, 0, 10, Minotaur, 0, 0, 6, 'idle', 0.8, 2 / 3);
+    const monsterHealth = new Health(monsterName, monster.health,
+      [canvas.width - 340, 0, canvas.width, 70],
+      [canvas.width - 340, 60, 300, 10],
+      [canvas.width - 340, 45]);
+    battleState.monster = monster;
+    battleState.monsterHealth = monsterHealth;
 
-  const tips = new Tips(
-    genericTips,
-    winTips,
-    loseTips,
-    [40, canvas.height - 80, canvas.width, 60],
-    [40, canvas.height - 40],
-  );
-  battleState.tips = tips;
+    const tips = new Tips(
+      genericTips,
+      winTips,
+      loseTips,
+      [40, canvas.height - 80, canvas.width, 60],
+      [40, canvas.height - 40],
+    );
+    battleState.tips = tips;
 
-  const score = new Score(0, [canvas.width / 2 - 70, 30, 110, 30], [canvas.width / 2 - 70, 45]);
-  battleState.score = score;
+    let scoreNumber = 0;
 
-  setInterval(monster.draw.bind(monster), 1000 / monster.fps);
-  setInterval(hero.draw.bind(hero), 1000 / hero.fps);
-  setInterval(heroHealth.draw.bind(heroHealth), 1000 / 50);
-  setInterval(monsterHealth.draw.bind(monsterHealth), 1000 / 50);
-  setInterval(tips.draw.bind(tips), 1000 / 50);
-  setInterval(score.draw.bind(score), 1000 / 50);
-};
+    if (battleState.score && battleState.monster.health) {
+      scoreNumber = battleState.score.score;
+    }
 
-export { loadCanvas, battleState, Task };
+    const score = new Score(scoreNumber,
+      [canvas.width / 2 - 70, 30, 150, 30],
+      [canvas.width / 2 - 70, 45]);
+    battleState.score = score;
+
+    setInterval(monster.draw.bind(monster), 1000 / monster.fps);
+    setInterval(hero.draw.bind(hero), 1000 / hero.fps);
+    setInterval(heroHealth.draw.bind(heroHealth), 1000 / 50);
+    setInterval(monsterHealth.draw.bind(monsterHealth), 1000 / 50);
+    setInterval(tips.draw.bind(tips), 1000 / 50);
+    setInterval(score.draw.bind(score), 1000 / 50);
+  }
+}
+
+export { LoadCanvas, battleState, Task };

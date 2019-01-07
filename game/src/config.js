@@ -14,7 +14,7 @@ const loseTips = [
   'Pull yourself together!',
 ];
 
-const monsterAdjective = [
+const mnstrAdj = [
   'ugly',
   'hungry',
   'ridiculous',
@@ -24,11 +24,11 @@ const monsterAdjective = [
   'silent',
 ];
 
-const monsterType = [
+const mnstrType = [
   'Minotaur',
 ];
 
-const monsterName = [
+const mnstrName = [
   'Tommy',
   'Molly',
   'Jack',
@@ -50,4 +50,4 @@ const simpleMathOperators = [
 
 export { simpleMathOperators };
 export { genericTips, winTips, loseTips };
-export { monsterAdjective, monsterType, monsterName };
+export { mnstrAdj, mnstrType, mnstrName };

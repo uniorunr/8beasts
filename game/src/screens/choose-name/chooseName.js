@@ -25,6 +25,7 @@ class ChoosePlayerName {
           e.preventDefault();
           const playerName = document.querySelector('.choose-player-name .player-name').value;
           ChoosePlayerName.empty();
+          sessionStorage.setItem('playerName', playerName);
           resolve(playerName);
         });
     });

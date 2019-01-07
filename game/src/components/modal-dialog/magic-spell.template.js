@@ -7,13 +7,13 @@ export default `
       <p class="spell-type">Attack spell</p>
       <input type="button" class="spell-button attack0" value="simple math spell">
       <input type="button" class="spell-button attack1" value="right order attack">
-      <input type="button" class="spell-button attack2" value="miraculous sequence">
+      <input type="button" class="spell-button attack2" value="magic translation">
     </div>
     <div class="spells heal-spells">
       <p class="spell-type">Heal potion</p>
-      <input type="button" class="spell-button heal0" value="magic translation">
-      <input type="button" class="spell-button heal1" value="powerful ear">
-      <input type="button" class="spell-button heal2" value="find the extra">
+      <input type="button" class="spell-button heal0" value="powerful ear">
+      <input type="button" class="spell-button heal1" value="find the extra">
+      <input type="button" class="spell-button heal2" value="miraculous sequence">
     </div>
   </div>
   </form>
