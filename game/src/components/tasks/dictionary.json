@@ -6,7 +6,8 @@
         "кот",
         "кошка",
         "котик"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "dog",
@@ -14,55 +15,63 @@
         "собака",
         "пес",
         "собачка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "bird",
       "translation": [
         "птица",
         "птичка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "apple",
       "translation": [
         "яблоко",
         "яблочко"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "pear",
       "translation": [
         "груша",
         "грушка"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "orange",
       "translation": [
         "апельсин",
         "апельсинчик"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "banana",
       "translation": [
         "банан",
         "бананчик"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "lemon",
       "translation": [
         "лимон",
         "лимончик"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "pineapple",
       "translation": [
         "ананас"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "grapes",
@@ -70,95 +79,109 @@
         "виноград",
         "виноградины",
         "виноградинки"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "kiwi",
       "translation": [
         "киви"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "carrot",
       "translation": [
         "морковь",
         "морковка"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Onion",
       "translation": [
         "лук",
         "луковица"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Garlic",
       "translation": [
         "чеснок"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Tomato",
       "translation": [
         "помидор",
         "томат"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "pepper",
       "translation": [
         "перец",
         "перчик"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Potato",
       "translation": [
         "картошка",
         "картофель"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Cucumber",
       "translation": [
         "огурец",
         "огурчик"
-      ]
+      ],
+      "type": "food"
     },
     {
       "word": "Snake",
       "translation": [
         "змея",
         "змейка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Kitten",
       "translation": [
         "котенок",
         "котеночек"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Puppy",
       "translation": [
         "щенок",
         "щеночек"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Rabbit",
       "translation": [
         "кролик"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "fish",
       "translation": [
         "рыба",
         "рыбка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Goat",
@@ -166,14 +189,16 @@
         "коза",
         "козел",
         "козлик"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Pig",
       "translation": [
         "свинья",
         "поросенок"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Sheep",
@@ -181,7 +206,8 @@
         "овца",
         "овечка",
         "баран"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Horse",
@@ -189,35 +215,40 @@
         "лошадь",
         "конь",
         "лошадка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Cow",
       "translation": [
         "коровка",
         "корова"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Goose",
       "translation": [
         "гусь",
         "гусыня"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Chicken",
       "translation": [
         "курица",
         "цыпленок"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Duck",
       "translation": [
         "утка",
         "уточка"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Fox",
@@ -225,96 +256,110 @@
         "лиса",
         "лисичка",
         "лис"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Wolf",
       "translation": [
         "волк",
         "волчица"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "bear",
       "translation": [
         "медведь",
         "медведица"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Elephant",
       "translation": [
         "слон",
         "слониха"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Tiger",
       "translation": [
         "тигр",
         "тигрица"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Crocodile",
       "translation": [
         "крокодил",
         "крокодилица"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Giraffe",
       "translation": [
         "жираф",
         "жирафчик"
-      ]
+      ],
+      "type": "animal"
     },
     {
       "word": "Car",
       "translation": [
         "машина",
         "автомобиль"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "Taxi",
       "translation": [
         "такси"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "Bus",
       "translation": [
         "автобус"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "Train",
       "translation": [
         "поезд",
         "состав"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "Plane",
       "translation": [
         "самолет",
         "самолетик"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "bike",
       "translation": [
         "велосипед",
         "мотоцикл"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "ship",
       "translation": [
         "корабль",
         "судно"
-      ]
+      ],
+      "type": "vehicle"
     },
     {
       "word": "Doctor",
@@ -322,81 +367,93 @@
         "доктор",
         "врач",
         "медик"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Vet",
       "translation": [
         "ветеринар"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Teacher",
       "translation": [
         "учитель",
         "учительница"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Policeman",
       "translation": [
         "полицейский",
         "милиционер"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Firefighter",
       "translation": [
         "пожарный",
         "пожарник"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Artist",
       "translation": [
         "художник",
         "художница"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Scientist",
       "translation": [
         "ученый"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Hairdresser",
       "translation": [
         "парикмахер"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Plumber",
       "translation": [
         "водопроводчик",
         "сантехник"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Chef",
       "translation": [
         "повар",
         "шеф-повар"
-      ]
+      ],
+      "type": "profession"
     },
     {
       "word": "Bedroom",
       "translation": [
         "спальня",
         "спальная комната"
-      ]
+      ],
+      "type": "home"
     },
     {
       "word": "Kitchen",
       "translation": [
         "кухня",
         "кухонька"
-      ]
+      ],
+      "type": "home"
     },
     {
       "word": "Bathroom",
@@ -404,88 +461,229 @@
         "ванная",
         "ванна",
         "ванная комната"
-      ]
+      ],
+      "type": "home"
     },
     {
       "word": "Garage",
       "translation": [
         "гараж"
-      ]
+      ],
+      "type": "home"
     },
     {
       "word": "Head",
       "translation": [
         "голова",
         "головка"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Hair",
       "translation": [
         "волосы"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Eyes",
       "translation": [
         "глаза"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Nose",
       "translation": [
         "нос",
         "носик"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Teeth",
       "translation": [
         "зубы",
         "зубки"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Lips",
       "translation": [
         "губы",
         "губки"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Ears",
       "translation": [
         "уши",
         "ушки"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Neck",
       "translation": [
         "шея",
         "шеюшка"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Shoulders",
       "translation": [
         "плечи",
         "плечики"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Leg",
       "translation": [
         "нога",
         "ножка"
-      ]
+      ],
+      "type": "human"
     },
     {
       "word": "Feet",
       "translation": [
         "стопы",
         "ноги"
-      ]
+      ],
+      "type": "human"
+    },
+    {
+      "word": "grandmother",
+      "translation": [
+        "бабушка",
+        "бабуля"
+      ],
+      "type": "family"
+    },{
+      "word": "brother",
+      "translation": [
+        "брат",
+        "братишка"
+      ],
+      "type": "family"
+    },{
+      "word": "grandson",
+      "translation": [
+        "внук",
+        "внучок"
+      ],
+      "type": "family"
+    },{
+      "word": "granddaughter",
+      "translation": [
+        "внучка",
+        "внученька"
+      ],
+      "type": "family"
+    },{
+      "word": "grandfather",
+      "translation": [
+        "дедушка",
+        "дедуля"
+      ],
+      "type": "family"
+    },{
+      "word": "daughter",
+      "translation": [
+        "дочка",
+        "доченька"
+      ],
+      "type": "family"
+    },{
+      "word": "uncle",
+      "translation": [
+        "дядя"
+      ],
+      "type": "family"
+    },{
+      "word": "wife",
+      "translation": [
+        "жена",
+        "супруга"
+      ],
+      "type": "family"
+    },{
+      "word": "mother",
+      "translation": [
+        "мама",
+        "мамуля",
+        "мать"
+      ],
+      "type": "family"
+    },{
+      "word": "husband",
+      "translation": [
+        "муж",
+        "супруг"
+      ],
+      "type": "family"
+    },{
+      "word": "father",
+      "translation": [
+        "папа",
+        "отец"
+      ],
+      "type": "family"
+    },{
+      "word": "kid",
+      "translation": [
+        "ребенок"
+      ],
+      "type": "family"
+    },{
+      "word": "parents",
+      "translation": [
+        "родители",
+        "родные"
+      ],
+      "type": "family"
+    },{
+      "word": "family",
+      "translation": [
+        "семья",
+        "семейка"
+      ],
+      "type": "family"
+    },{
+      "word": "sister",
+      "translation": [
+        "сестра",
+        "сестричка"
+      ],
+      "type": "family"
+    },{
+      "word": "son",
+      "translation": [
+        "сын",
+        "сынок"
+      ],
+      "type": "family"
+    },{
+      "word": "aunt",
+      "translation": [
+        "тетя",
+        "тетушка"
+      ],
+      "type": "family"
     }
+  ],
+  "types": [
+    "animal",
+    "food",
+    "vehicle",
+    "profession",
+    "home",
+    "human",
+    "family"
   ]
 }
