@@ -1,6 +1,6 @@
 import 'babel-polyfill';
-import Wizard from '../../img/wizard_sprite.png';
-import Minotaur from '../../img/minotaur_sprite.png';
+import Wizard from '../../assets/img/wizard_sprite.png';
+import Minotaur from '../../assets/img/minotaur_sprite.png';
 import {
   Canvas, Character, Health, Score, Tips,
 } from '../../components/canvas/canvasinit';

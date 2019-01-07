@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import './styles/style.css';
+import './assets/styles/style.css';
 import ChoosePlayerName from './screens/choose-name/chooseName';
 import LandingPage from './screens/home/home';
 import MagicSpell from './components/modal-dialog/magic-spell';
