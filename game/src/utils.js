@@ -9,4 +9,19 @@ const combinedMonsterName = (adjective, type, name) => {
   return `${random(adjective)} ${random(type)} ${random(name)}`;
 };
 
-export { pause, combinedMonsterName };
+const shuffle = (array) => {
+  const arr = array;
+  let currentIndex = array.length;
+  let temporaryValue;
+  let randomIndex;
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = arr[currentIndex];
+    arr[currentIndex] = arr[randomIndex];
+    arr[randomIndex] = temporaryValue;
+  }
+  return arr;
+};
+
+export { pause, combinedMonsterName, shuffle };

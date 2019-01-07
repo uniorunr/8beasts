@@ -2,21 +2,7 @@ import Sortable from 'sortablejs';
 import template from './dragAndDrop.template';
 import { Task } from '../../../screens/battle/start';
 import dictionary from '../dictionary.json';
-
-const shuffle = (array) => {
-  const arr = array;
-  let currentIndex = array.length;
-  let temporaryValue;
-  let randomIndex;
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = arr[currentIndex];
-    arr[currentIndex] = arr[randomIndex];
-    arr[randomIndex] = temporaryValue;
-  }
-  return arr;
-};
+import { shuffle } from '../../../utils';
 
 class DragAndDrop extends Task {
   static addDragAndDrop() {
