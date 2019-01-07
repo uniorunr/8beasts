@@ -3,6 +3,7 @@ import Translation from './translation/translation';
 import Audition from './audition/audition';
 import DragAndDrop from './dragAndDrop/dragAndDrop';
 import Sequence from './sequence/sequence';
+import FindExtra from './findExtra/findExtra';
 
 const chooseTask = async (spell) => {
   switch (spell.toLowerCase()) {
@@ -20,6 +21,9 @@ const chooseTask = async (spell) => {
       break;
     case 'miraculous sequence':
       await Sequence.getAnswer();
+      break;
+    case 'find the extra':
+      await FindExtra.getAnswer();
       break;
     default:
       throw new TypeError('Something went wrong, sorry kid!');
