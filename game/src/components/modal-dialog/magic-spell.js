@@ -45,7 +45,7 @@ class MagicSpell {
             if (battleState.score.score) {
               await FireBase.setUser(playerName, battleState.score.score);
             }
-            await ScoreTable.draw();
+            await ScoreTable.draw(await ScoreTable.getDBData());
           }
           resolve(spell);
         });

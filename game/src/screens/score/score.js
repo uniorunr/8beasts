@@ -1,12 +1,16 @@
+import 'babel-polyfill';
 import template from './score.template';
 import FireBase from '../../db/firebase';
 
 class ScoreTable {
-  static async draw() {
+  static async getDBData() {
+    return FireBase.getData();
+  }
+
+  static draw(scoreObj) {
     const element = document.querySelector('.container');
     element.insertAdjacentHTML('afterbegin', template);
 
-    const scoreObj = await FireBase.getData();
     const usersArr = Object.keys(scoreObj);
     const scoresArr = Object.values(scoreObj);
     const merged = [];
@@ -29,13 +33,13 @@ class ScoreTable {
     });
 
     document.querySelector('.score-section .close').addEventListener('click', async () => {
-      ScoreTable.empty();
+      await ScoreTable.empty();
+      window.location.reload();
     });
   }
 
   static empty() {
     document.querySelector('#scoreTable').remove();
-    window.location.reload();
   }
 }
 
