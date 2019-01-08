@@ -1,0 +1,51 @@
+.score-section {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+  width: 70%;
+  color: #72707d;
+}
+
+.score-section h1 {
+  font-family: Emulogic;
+  font-size: 16px;
+
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+}
+
+.score-table-header {
+  font-size: 12px;
+  color: #72707d;
+}
+
+.score-table td {
+  text-align: center;
+  font-size: 12px;
+  color: #989393;
+}
+
+.score-section .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1%;
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+}
+
+.score-section .close:active {
+  background: antiquewhite;
+  color: #72707d;
+}

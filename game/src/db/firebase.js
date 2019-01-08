@@ -27,6 +27,12 @@ class FireBase {
     update[`/users/${username}`] = score;
     rootRef.update(update);
   }
+
+  static async getData() {
+    const rootRef = firebase.database().ref('users');
+    return rootRef.once('value')
+      .then(snapshot => snapshot.val());
+  }
 }
 
 export default FireBase;

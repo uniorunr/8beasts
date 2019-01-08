@@ -4,6 +4,7 @@ import { pause, combinedMonsterName } from '../../utils';
 import { battleState, LoadCanvas } from '../../screens/battle/start';
 import { mnstrAdj, mnstrType, mnstrName } from '../../config';
 import FireBase from '../../db/firebase';
+import ScoreTable from '../../screens/score/score';
 
 class MagicSpell {
   static async start(heroName, monsterName) {
@@ -30,7 +31,7 @@ class MagicSpell {
         button.addEventListener('click', async (e) => {
           e.preventDefault();
           const spell = button.value;
-          await MagicSpell.empty();
+          MagicSpell.empty();
           await chooseTask(spell);
           if (battleState.monster.health && battleState.hero.health) {
             await MagicSpell.getSpell();
@@ -44,7 +45,7 @@ class MagicSpell {
             if (battleState.score.score) {
               await FireBase.setUser(playerName, battleState.score.score);
             }
-            console.log('hi mark'); // wip
+            await ScoreTable.draw();
           }
           resolve(spell);
         });

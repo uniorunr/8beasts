@@ -17,6 +17,7 @@
 @import url("../../components/tasks/dragAndDrop/dragAndDrop.css");
 @import url("../../components/tasks/sequence/sequence.css");
 @import url("../../components/tasks/findExtra/findExtra.css");
+@import url("../../screens/score/score.css");
 
 body {
   background-color: #72707d;
