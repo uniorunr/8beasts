@@ -6,10 +6,12 @@ import MagicSpell from './components/modal-dialog/magic-spell';
 import { combinedMonsterName } from './utils';
 import { mnstrAdj, mnstrType, mnstrName } from './config';
 import FireBase from './db/firebase';
+import SoundController from './components/controllers/sound/soundController';
 
 const startApp = () => {
   FireBase.init();
   LandingPage.draw();
+  SoundController.draw();
 
   document.querySelector('.play-button .button').addEventListener('click', async (e) => {
     e.preventDefault();

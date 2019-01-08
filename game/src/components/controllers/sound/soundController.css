@@ -1,0 +1,16 @@
+.sound-button {
+  position: absolute;
+  top: calc(100% - 70px);
+  left: calc(100% - 160px);
+  background: #72707d;
+  color: antiquewhite;
+  padding: 1%;
+  border: none;
+  font: 12px Emulogic, Pixelettes, sans-serif;
+  outline: none;
+}
+
+.sound-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}

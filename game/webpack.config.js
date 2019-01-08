@@ -46,6 +46,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(mp3|wav)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'sounds/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   mode: 'development',

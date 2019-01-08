@@ -7,6 +7,7 @@ import {
 import { genericTips, winTips, loseTips } from '../../config';
 import LandingPage from '../home/home';
 import { pause } from '../../utils';
+import SoundController from '../../components/controllers/sound/soundController';
 
 const battleState = {};
 
@@ -16,7 +17,9 @@ class Task {
       case 'attack':
         await pause(1000);
         battleState.hero.attack();
-        await pause(1500);
+        await pause(1000);
+        SoundController.wizzardAttack();
+        await pause(500);
         battleState.monsterHealth.damage();
         battleState.monster.damage();
         if (battleState.monster.health !== 0) {
@@ -31,7 +34,9 @@ class Task {
       case 'heal':
         await pause(1000);
         battleState.hero.heal();
-        await pause(1500);
+        await pause(1000);
+        SoundController.wizzardHeal();
+        await pause(500);
         battleState.heroHealth.recovery();
         battleState.hero.recovery();
         battleState.tips.currTip = battleState
@@ -47,6 +52,8 @@ class Task {
     await pause(1000);
     battleState.monster.attack();
     await pause(1500);
+    SoundController.monsterAttack();
+    await pause(500);
     battleState.heroHealth.damage();
     battleState.hero.damage();
     if (battleState.hero.health === 0) {
