@@ -21,7 +21,9 @@ class Translation extends Task {
 
   static getAnswer() {
     Translation.draw();
+    Translation.focusOnImput();
     const input = document.querySelector('#taskTranslation .tasks-dialog-answer');
+    input.focus();
     const submitButton = document.querySelector('#taskTranslation .submit-button');
     const index = +document.querySelector('#taskTranslation .word-to-translate .word')
       .getAttribute('data-id');

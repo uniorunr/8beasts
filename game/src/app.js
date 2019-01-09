@@ -7,11 +7,13 @@ import { combinedMonsterName } from './utils';
 import { mnstrAdj, mnstrType, mnstrName } from './config';
 import FireBase from './db/firebase';
 import SoundController from './components/controllers/sound/soundController';
+import GameInfo from './components/controllers/gameInfo/gameInfo';
 
 const startApp = () => {
   FireBase.init();
   LandingPage.draw();
   SoundController.draw();
+  GameInfo.draw();
 
   document.querySelector('.container .play-button').addEventListener('click', async (e) => {
     e.preventDefault();

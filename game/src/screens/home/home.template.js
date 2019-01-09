@@ -5,7 +5,7 @@ export default `
   <div class="header-content">
     <div class="header-descriptopn">
       <p class="game-description">Hey kid, Do you feel that you have enough knowledge to clash with the dangerous monster and win the battle? If so, what do you wait for? Let's get started!</p>
-      <input type="button" class="play-button" value="play ->"></form>
+      <input type="button" class="play-button" value="play ->">
     </div>
     <div class="header-img">
       <img class="lp-wizzard" src="" alt="wizzard">

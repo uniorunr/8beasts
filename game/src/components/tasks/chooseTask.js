@@ -7,22 +7,22 @@ import FindExtra from './findExtra/findExtra';
 
 const chooseTask = async (spell) => {
   switch (spell.toLowerCase()) {
-    case 'simple math spell':
+    case '1. simple math spell':
       await SimpleMath.getAnswer();
       break;
-    case 'magic translation':
+    case '5. magic translation':
       await Translation.getAnswer();
       break;
-    case 'powerful ear':
+    case '2. powerful ear':
       await Audition.getAnswer();
       break;
-    case 'right order attack':
+    case '3. right order attack':
       await DragAndDrop.getAnswer();
       break;
-    case 'miraculous sequence':
+    case '6. miraculous sequence':
       await Sequence.getAnswer();
       break;
-    case 'find the extra':
+    case '4. find the extra':
       await FindExtra.getAnswer();
       break;
     default:

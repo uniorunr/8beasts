@@ -4,7 +4,9 @@ import Minotaur from '../../assets/img/minotaur_sprite.png';
 import {
   Canvas, Character, Health, Score, Tips,
 } from '../../components/canvas/canvasinit';
-import { genericTips, winTips, loseTips } from '../../config';
+import {
+  genericTips, winTips, loseTips, keys,
+} from '../../config';
 import LandingPage from '../home/home';
 import { pause } from '../../utils';
 import SoundController from '../../components/controllers/sound/soundController';
@@ -64,6 +66,15 @@ class Task {
     battleState.tips.currTip = battleState
       .tips.loseTips[Math.floor(Math.random() * battleState.tips.loseTips.length)];
     await pause(2000);
+  }
+
+  static focusOnImput() {
+    const genericInput = document.querySelector('input[type="text"]');
+    document.addEventListener('keydown', (event) => {
+      if (event.keyCode === keys.shift) {
+        genericInput.focus();
+      }
+    });
   }
 }
 

@@ -19,7 +19,9 @@ class Audition extends Task {
 
   static getAnswer() {
     Audition.draw();
+    Audition.focusOnImput();
     const input = document.querySelector('#taskAudition .tasks-dialog-answer');
+    input.focus();
     const submitButton = document.querySelector('#taskAudition .submit-button');
     const index = +document.querySelector('#taskAudition .play-button')
       .getAttribute('data-id');

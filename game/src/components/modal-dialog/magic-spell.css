@@ -15,12 +15,16 @@
 
 .spell-button {
   background: #72707d;
-  border: none;
+  border: solid #72707d 4px;
   outline: none;
   font-family: Emulogic;
   font-size: 12px;
   color: antiquewhite;
   margin: 5% 0;
+}
+
+.spell-button:focus {
+  border: solid #3d3b47 4px;
 }
 
 .magic-spell-dialog .spell-button:active {

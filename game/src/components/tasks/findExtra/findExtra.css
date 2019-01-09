@@ -82,3 +82,7 @@
   text-align: center;
   flex: none;
 }
+
+.tasks-dialog .find-extra-item:focus {
+  border: solid #3d3b47 4px;
+}

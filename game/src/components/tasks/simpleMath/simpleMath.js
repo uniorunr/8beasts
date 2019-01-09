@@ -43,7 +43,9 @@ class SimpleMath extends Task {
 
   static getAnswer() {
     SimpleMath.draw();
+    SimpleMath.focusOnImput();
     const input = document.querySelector('#taskSimpleMath .tasks-dialog-answer');
+    input.focus();
     const submitButton = document.querySelector('#taskSimpleMath .submit-button');
     const operand1 = +document.querySelector('#taskSimpleMath .operand1').innerHTML;
     const operand2 = +document.querySelector('#taskSimpleMath .operand2').innerHTML;

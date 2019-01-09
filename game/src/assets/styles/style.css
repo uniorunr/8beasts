@@ -19,6 +19,7 @@
 @import url("../../components/tasks/findExtra/findExtra.css");
 @import url("../../screens/score/score.css");
 @import url("../../components/controllers/sound/soundController.css");
+@import url("../../components/controllers/gameInfo/gameInfo.css");
 
 body {
   background-color: #72707d;

@@ -26,7 +26,9 @@ class Sequence extends Task {
 
   static getAnswer() {
     Sequence.draw();
+    Sequence.focusOnImput();
     const input = document.querySelector('#taskSequence .tasks-dialog-answer');
+    input.focus();
     const submitButton = document.querySelector('#taskSequence .submit-button');
     const rightAnswer = Sequence.fillSequence();
     return new Promise((resolve) => {

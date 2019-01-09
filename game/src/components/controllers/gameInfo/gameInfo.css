@@ -1,0 +1,65 @@
+.game-info-button {
+  position: fixed;
+  top: 85%;
+  left: 65%;
+  background: #72707d;
+  color: antiquewhite;
+  padding: 1%;
+  border: solid #72707d 4px;
+  font: 12px Emulogic, Pixelettes, sans-serif;
+  outline: none;
+}
+
+.game-info-button:focus {
+  border: solid #3d3b47 4px;
+}
+
+.game-info-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.game-info-popup {
+  position: absolute;
+  background:antiquewhite;
+  padding: 3%;
+  border: solid #72707d 5px;
+  top: 20vh;
+  z-index: 1;
+}
+
+.game-info-popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1%;
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 12px;
+  color: antiquewhite;
+}
+
+.game-info-popup .close:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.game-info-popup h1 {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.game-info-list {
+  font-family: Emulogic;
+  font-size: 12px;
+  color: #72707d;
+}
+
+.game-info-list li {
+  margin: 5% 0;
+}

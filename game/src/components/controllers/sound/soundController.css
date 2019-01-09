@@ -1,13 +1,17 @@
 .sound-button {
   position: fixed;
-  top: calc(100% - 70px);
-  left: calc(100% - 160px);
+  top: 85%;
+  left: 85%;
   background: #72707d;
   color: antiquewhite;
   padding: 1%;
-  border: none;
+  border: solid #72707d 4px;
   font: 12px Emulogic, Pixelettes, sans-serif;
   outline: none;
+}
+
+.sound-button:focus {
+  border: solid #3d3b47 4px;
 }
 
 .sound-button:active {

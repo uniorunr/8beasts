@@ -2,7 +2,9 @@ import template from './magic-spell.template';
 import chooseTask from '../tasks/chooseTask';
 import { pause, combinedMonsterName } from '../../utils';
 import { battleState, LoadCanvas } from '../../screens/battle/start';
-import { mnstrAdj, mnstrType, mnstrName } from '../../config';
+import {
+  mnstrAdj, mnstrType, mnstrName, keys,
+} from '../../config';
 import FireBase from '../../db/firebase';
 import ScoreTable from '../../screens/score/score';
 
@@ -24,6 +26,7 @@ class MagicSpell {
 
   static getSpell() {
     MagicSpell.draw();
+    MagicSpell.keybordControl();
     const playerName = sessionStorage.getItem('playerName');
     return new Promise((resolve) => {
       const buttons = document.querySelectorAll('#magicSpell .spell-button');
@@ -50,6 +53,34 @@ class MagicSpell {
           resolve(spell);
         });
       });
+    });
+  }
+
+  static keybordControl() {
+    document.addEventListener('keydown', (event) => {
+      if (document.querySelector('.spell-button')) {
+        switch (event.keyCode) {
+          case keys.key1:
+            document.querySelector('.spell-button.attack0').focus();
+            break;
+          case keys.key2:
+            document.querySelector('.spell-button.heal0').focus();
+            break;
+          case keys.key3:
+            document.querySelector('.spell-button.attack1').focus();
+            break;
+          case keys.key4:
+            document.querySelector('.spell-button.heal1').focus();
+            break;
+          case keys.key5:
+            document.querySelector('.spell-button.attack2').focus();
+            break;
+          case keys.key6:
+            document.querySelector('.spell-button.heal2').focus();
+            break;
+          default:
+        }
+      }
     });
   }
 }

@@ -1,6 +1,7 @@
 import 'babel-polyfill';
 import template from './score.template';
 import FireBase from '../../db/firebase';
+import { keys } from '../../config';
 
 class ScoreTable {
   static async getDBData() {
@@ -32,9 +33,18 @@ class ScoreTable {
       table.appendChild(row);
     });
 
-    document.querySelector('.score-section .close').addEventListener('click', async () => {
-      await ScoreTable.empty();
+    document.querySelector('.score-section .close').addEventListener('click', () => {
+      ScoreTable.empty();
       window.location.reload();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      const closeButton = document.querySelector('.score-section .close');
+      if (event.keyCode === keys.esc) {
+        if (closeButton) {
+          ScoreTable.empty();
+        }
+      }
     });
   }
 
