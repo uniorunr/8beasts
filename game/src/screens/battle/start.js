@@ -26,6 +26,7 @@ class Task {
           battleState.monster.heal();
         } else {
           battleState.monster.death();
+          SoundController.monsterDeath();
         }
         battleState.tips.currTip = battleState
           .tips.winTips[Math.floor(Math.random() * battleState.tips.winTips.length)];
@@ -58,6 +59,7 @@ class Task {
     battleState.hero.damage();
     if (battleState.hero.health === 0) {
       battleState.hero.death();
+      SoundController.wizzardDeath();
     }
     battleState.tips.currTip = battleState
       .tips.loseTips[Math.floor(Math.random() * battleState.tips.loseTips.length)];

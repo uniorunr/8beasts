@@ -2,6 +2,8 @@ import mainThemeSrc from '../../../assets/sounds/john_maus_-_believer_minimized.
 import wizzardAttackSrc from '../../../assets/sounds/wizzard_attack.wav';
 import wizzardHealSrc from '../../../assets/sounds/wizzard_heal.wav';
 import monsterAttackSrc from '../../../assets/sounds/monster_attack.wav';
+import monsterDeathSrc from '../../../assets/sounds/monster_death.wav';
+import wizzardDeathSrc from '../../../assets/sounds/wizzard_death.wav';
 import template from './soundController.template';
 
 class SoundController {
@@ -61,6 +63,26 @@ class SoundController {
 
     if (soundState === 'true') {
       SoundController.play(monsterAttackSound);
+    }
+  }
+
+  static monsterDeath() {
+    const monsterDeathSound = new Audio(monsterDeathSrc);
+    monsterDeathSound.volume = 0.9;
+    const soundState = sessionStorage.getItem('sound');
+
+    if (soundState === 'true') {
+      SoundController.play(monsterDeathSound);
+    }
+  }
+
+  static wizzardDeath() {
+    const wizzardDeathSound = new Audio(wizzardDeathSrc);
+    wizzardDeathSound.volume = 0.9;
+    const soundState = sessionStorage.getItem('sound');
+
+    if (soundState === 'true') {
+      SoundController.play(wizzardDeathSound);
     }
   }
 

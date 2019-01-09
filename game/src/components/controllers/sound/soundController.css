@@ -1,5 +1,5 @@
 .sound-button {
-  position: absolute;
+  position: fixed;
   top: calc(100% - 70px);
   left: calc(100% - 160px);
   background: #72707d;
