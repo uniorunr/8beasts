@@ -13,7 +13,7 @@ const startApp = () => {
   LandingPage.draw();
   SoundController.draw();
 
-  document.querySelector('.play-button .button').addEventListener('click', async (e) => {
+  document.querySelector('.container .play-button').addEventListener('click', async (e) => {
     e.preventDefault();
     const playerName = await ChoosePlayerName.getNewPlayerName();
     await MagicSpell.start(playerName, combinedMonsterName(mnstrAdj, mnstrType, mnstrName));

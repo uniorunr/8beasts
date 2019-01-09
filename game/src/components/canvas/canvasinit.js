@@ -1,5 +1,9 @@
 class Canvas {
   static draw() {
+    const battle = document.createElement('div');
+    battle.setAttribute('id', 'battleScreen');
+    battle.setAttribute('class', 'battle-content');
+    document.querySelector('.container').appendChild(battle);
     const cnvs = document.createElement('canvas');
     cnvs.setAttribute('id', 'canvas');
     document.querySelector('.battle-content').appendChild(cnvs);

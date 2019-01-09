@@ -1,6 +1,95 @@
-.landing-page {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: antiquewhite;
+  width: 100%;
+}
+
+.landing-page h2 {
+  font-size: 18px;
+  color: #72707d;
+  margin: 4% 0 0;
+}
+
+.game-name {
+  font-size: 28px;
+  color: #72707d;
+  margin: 5% 0 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 9% 0;
+}
+
+.header-descriptopn {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-description {
+  font-size: 15px;
+  line-height: 40px;
+  color: #72707d;
+}
+
+.play-button {
+  background: #72707d;
+  border: none;
+  outline: none;
+  font-family: Emulogic;
+  font-size: 18px;
+  color: antiquewhite;
+  width: auto;
+}
+
+.play-button:active {
+  background: antiquewhite;
+  color: #72707d;
+}
+
+.gameplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: antiquewhite;
+  width: 100%;
+  margin: 1% 0;
+}
+
+.gameplay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gameplay-screenshot {
+  width: 70%;
+  margin: 3% 0;
+}
+
+section .contributors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: antiquewhite;
+  width: 100%;
+  margin: 1% 0;
+}
+
+.contributors-description {
+  font-size: 12px;
+  line-height: 40px;
+  color: #72707d;
 }
