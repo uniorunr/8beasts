@@ -19,7 +19,7 @@ const chooseTask = async (spell) => {
     case '3. right order attack':
       await DragAndDrop.getAnswer();
       break;
-    case '6. miraculous sequence':
+    case '6. fairy sequence':
       await Sequence.getAnswer();
       break;
     case '4. find the extra':

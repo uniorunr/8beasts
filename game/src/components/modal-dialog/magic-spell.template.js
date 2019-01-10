@@ -13,7 +13,7 @@ export default `
       <p class="spell-type">Heal potion</p>
       <input type="button" class="spell-button heal0" value="2. powerful ear">
       <input type="button" class="spell-button heal1" value="4. find the extra">
-      <input type="button" class="spell-button heal2" value="6. miraculous sequence">
+      <input type="button" class="spell-button heal2" value="6. fairy sequence">
     </div>
   </div>
   </form>
