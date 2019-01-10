@@ -16,7 +16,7 @@ class SoundController {
 
   static mainTheme() {
     const mainThemeSound = new Audio(mainThemeSrc);
-    mainThemeSound.volume = 0.02;
+    mainThemeSound.volume = 0.05;
 
     mainThemeSound.addEventListener('ended', () => {
       mainThemeSound.currentTime = 0;
