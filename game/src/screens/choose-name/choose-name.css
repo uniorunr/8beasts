@@ -1,5 +1,5 @@
 .choose-player-name {
-  position: absolute;
+  position: fixed;
   background:antiquewhite;
   padding: 3%;
   border: solid #72707d 5px;
