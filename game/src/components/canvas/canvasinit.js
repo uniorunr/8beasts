@@ -204,6 +204,52 @@ class Tips {
   }
 }
 
+class Animation {
+  constructor(sWidth, sHeight, rows, cols, curFrame, frames, spriteSrc,
+    srcX, srcY, fps, position, dPos, yPosition) {
+    this.spriteWidth = sWidth;
+    this.spriteHeight = sHeight;
+    this.spriteRows = rows;
+    this.spriteCols = cols;
+    this.curFrame = curFrame;
+    this.frames = frames;
+    this.sprite = new Image();
+    this.sprite.src = spriteSrc;
+    this.srcX = srcX;
+    this.srcY = srcY;
+    this.fps = fps;
+    this.position = position;
+    this.dPos = dPos;
+    this.yPosition = yPosition;
+    this.canvas = document.getElementById('canvas');
+    this.ctx = this.canvas.getContext('2d');
+  }
+
+  frameWidth() {
+    return this.spriteWidth / this.spriteCols;
+  }
+
+  frameHeight() {
+    return this.spriteHeight / this.spriteRows;
+  }
+
+  updateFrame() {
+    this.ctx.clearRect(this.canvas.width * this.position - this.frameWidth() / this.yPosition,
+      this.canvas.width - this.canvas.width * this.dPos,
+      this.frameWidth(), this.frameHeight());
+    this.curFrame = (this.curFrame += 1) % this.frames;
+    this.srcX = this.curFrame * this.frameWidth();
+  }
+
+  draw() {
+    this.updateFrame();
+    this.ctx.drawImage(this.sprite, this.srcX, this.srcY, this.frameWidth(), this.frameHeight(),
+      this.canvas.width * this.position - this.frameWidth() / this.yPosition,
+      this.canvas.width - this.canvas.width * this.dPos,
+      this.frameWidth(), this.frameHeight());
+  }
+}
+
 export {
-  Canvas, Character, Health, Score, Tips,
+  Canvas, Character, Health, Score, Tips, Animation,
 };
