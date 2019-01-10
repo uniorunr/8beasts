@@ -5,6 +5,10 @@ const dom = new JSDOM();
 global.document = dom.window.document;
 global.window = dom.window;
 
+const container = document.createElement('div');
+container.className = 'container';
+document.querySelector('body').appendChild(container);
+
 const content = document.createElement('div');
 content.className = 'battle-content';
 document.querySelector('body').appendChild(content);
