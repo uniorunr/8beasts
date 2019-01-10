@@ -43,6 +43,7 @@ class ScoreTable {
       if (event.keyCode === keys.esc) {
         if (closeButton) {
           ScoreTable.empty();
+          window.location.reload();
         }
       }
     });
