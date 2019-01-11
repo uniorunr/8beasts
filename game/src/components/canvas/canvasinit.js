@@ -101,14 +101,16 @@ class Character extends Sprite {
   }
 
   damage() {
-    if (this.health !== 0) {
+    if (this.health > 0) {
       this.health -= 20;
+      if (this.health < 0) this.health = 0;
     }
   }
 
   recovery() {
-    if (this.health !== 100) {
+    if (this.health < 100) {
       this.health += 10;
+      if (this.health > 100) this.health = 100;
     }
   }
 }
@@ -145,15 +147,17 @@ class Health {
   }
 
   damage() {
-    if (this.health !== 0) {
+    if (this.health > 0) {
       this.health -= 20;
+      if (this.health < 0) this.health = 0;
       this.healthArea[2] = this.rectangleArea[2] * this.health / 100;
     }
   }
 
   recovery() {
-    if (this.health !== 100) {
+    if (this.health < 100) {
       this.health += 10;
+      if (this.health > 100) this.health = 100;
       this.healthArea[2] = this.rectangleArea[2] * this.health / 100;
     }
   }
