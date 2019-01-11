@@ -128,11 +128,11 @@ class LoadCanvas {
       [canvas.width / 2 - 70, 45]);
     battleState.score = score;
 
-    const torchLeft = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.1, 0.885, 3);
-    const torchCenter = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.5, 0.885, 3);
-    const torchRight = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.9, 0.885, 3);
+    const torchLeft = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.1, 0.91, 3);
+    const torchCenter = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.5, 0.91, 3);
+    const torchRight = new Animation(240, 80, 1, 3, 0, 3, Torch, 0, 0, 3, 0.9, 0.91, 3);
     const skull = new Animation(80, 80, 1, 1, 0, 1, Skull, 0, 0, 3, 0.135, 0.655, 1.45);
-    const chest = new Animation(80, 80, 1, 1, 0, 1, Chest, 0, 0, 3, 0.075, 0.65, 1.4);
+    const barrel = new Animation(80, 80, 1, 1, 0, 1, Chest, 0, 0, 3, 0.075, 0.65, 1.4);
 
     setInterval(monster.draw.bind(monster), 1000 / monster.fps);
     setInterval(hero.draw.bind(hero), 1000 / hero.fps);
@@ -143,8 +143,8 @@ class LoadCanvas {
     setInterval(torchLeft.draw.bind(torchLeft), 1000 / torchLeft.fps);
     setInterval(torchCenter.draw.bind(torchCenter), 1000 / torchCenter.fps);
     setInterval(torchRight.draw.bind(torchRight), 1000 / torchRight.fps);
-    setInterval(skull.draw.bind(skull), 1000 / skull.fps);
-    setInterval(chest.draw.bind(chest), 1000 / chest.fps);
+    setInterval(skull.draw.bind(skull), 1000 / 50);
+    setInterval(barrel.draw.bind(barrel), 1000 / 50);
   }
 }
 
