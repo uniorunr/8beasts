@@ -65,6 +65,8 @@ class Task {
     if (battleState.hero.health === 0) {
       battleState.hero.death();
       SoundController.wizzardDeath();
+    } else {
+      battleState.hero.walk();
     }
     battleState.tips.currTip = battleState
       .tips.loseTips[Math.floor(Math.random() * battleState.tips.loseTips.length)];
