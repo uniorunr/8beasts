@@ -4,13 +4,6 @@
 
 ### Target audience: children 6-8 y.o.
 
-### Functionality:
-  1. Landing Page
-  2. Battle screen
-  3. Modal dialog with possibility to choose a spell
-  4. Task screen
-  5. Screen with the high score list
-
 ### Stack:
   - JavaScript (ES6+)
   - HTML5 + Canvas
@@ -18,4 +11,11 @@
   - Webpack
   - Babel
   - Firebase
+
+### Functionality:
+  1. Landing Page
+  2. Battle screen
+  3. Modal dialog with possibility to choose a spell
+  4. Task screen
+  5. Screen with the high score list
   
